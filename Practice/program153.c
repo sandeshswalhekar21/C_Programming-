@@ -1,0 +1,26 @@
+#include<stdio.h>
+
+typedef unsigned int UINT;                           
+
+
+int main()
+{
+    UINT iNo = 0;
+    UINT iAns=0;
+    UINT iMask = 4096;                       
+   
+
+    printf("Enter  Number:");
+    scanf("%d",&iNo);
+
+    iAns = iNo & iMask;
+    if(iAns == iMask)
+    {
+        printf("13th Bit is on:");
+    }else{
+        printf("13th Bit is off");
+    }
+   
+
+    return 0;
+}

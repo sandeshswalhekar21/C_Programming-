@@ -1,0 +1,23 @@
+#include<stdio.h>
+
+typedef unsigned int UINT;                           
+
+
+int main()
+{
+  
+    UINT iMask = 1; 
+    int iCnt=0; 
+                           
+   
+for(iCnt=1;iCnt<=33;iCnt++)            //bcoz 33 all data fall and bcome 0 
+{
+
+     printf("%d : %X\n",iCnt,iMask);    
+     iMask = iMask<<1;
+
+}   
+   
+
+    return 0;
+}
